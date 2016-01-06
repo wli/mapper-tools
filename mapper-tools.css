@@ -1,0 +1,7 @@
+body.shrink-road-attributes .block .row {
+  min-height: inherit;
+}
+
+body.move-message-bar .message-bar-container {
+  top: 46px;
+}

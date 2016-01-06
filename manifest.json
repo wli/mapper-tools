@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Mapper Tools",
+  "description": "This extension enhances Google MapMaker for mappers and reviewers.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+	  "matches": ["https://www.google.com/mapmaker*", "http://www.google.com/mapmaker*"],
+	  "js": ["vendor/jquery-2.1.4.min.js", "vendor/underscore-1.8.3.min.js", "mapper-tools.js"],
+	  "css": ["mapper-tools.css"]
+	}
+  ],
+  
+  "permissions": [
+    "tabs",
+	"http://www.google.com/mapmaker*",
+	"https://www.google.com/mapmaker*",
+    "https://ajax.googleapis.com/"
+  ]
+}
